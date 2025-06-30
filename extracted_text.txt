@@ -1,0 +1,113 @@
+Citizen
+Search By
+National Id
+National Id/Voter No/Voter Id
+2431124482
+SEARCH
+National ID 2431124482
+Pin	20076129409000032
+Status	underaged
+Afis Status NO_MATCH
+Lock Flag	N
+Voter No
+Form No	NIDFN155752447
+Sl No	0
+Tag	halnagad_2025_feb
+Name(Bangla)জান্নাতুল ফেরদৌস সঞ্চিতা
+Name(English) JANNATUL FERDOUS SHONCHITA
+Date of Birth 2007-02-02
+Birth Place ময়মনসিংহ
+Birth Other
+Birth Registration No20076128809034880
+Father Nameমোঃ আলা উদ্দিন
+Mother Nameমোসাঃ রোকসানা জাহান
+Spouse Name
+Gender	female
+Marital	unmarried
+Occupationছাত্র/ছাত্রী
+Disability
+Disability Other
+Present Address Division ময়মনসিংহ	District ময়মনসিংহ
+RMOপৌরসভা (2) City
+Corporation Or
+Municipality
+ত্রিশাল
+পৌরসভা
+Upozilaত্রিশাল	Union/Ward ওয়ার্ড নং-০৯
+Mouza/Moholla	Additional
+Mouza/Moholla
+রামপুর
+Ward For
+Union Porishod
+Village/Road
+Additional
+Village/Road
+দরিরামপুর	Home/Holding
+No
+-
+Post Officeত্রিশাল	Postal Code ২২২০
+Region ময়মনসিংহ
+Permanent Address Division ময়মনসিংহ	District ময়মনসিংহ
+RMOপৌরসভা (2) City
+Corporation Or
+Municipality
+ত্রিশাল
+পৌরসভা
+Upozilaত্রিশাল	Union/Ward ওয়ার্ড নং-০৯
+Mouza/Moholla	Additional
+Mouza/Moholla
+রামপুর
+Ward For
+Union Porishod
+Village/Road
+Additional
+Village/Road
+দরিরামপুর	Home/Holding
+No
+-
+Post Officeত্রিশাল	Postal Code ২২২০
+Region ময়মনসিংহ
+Foreign Address Country	Province
+City	House
+Road	Zip
+Smart Card Info
+Voter Documents
+BIRTH_CERTIFICATE
+DATA ENTRY PROOF COPY
+VOTER FORM PAGE ONE
+VOTER FORM PAGE TWO
+
+Mobile
+Email
+1st Spouse Name
+National ID
+Death Date Of Spouse
+Education	উচ্চ মাধ্যমিক বা সমতুল্য
+Education Other
+Education Sub
+Identification
+Blood Group
+TIN
+Driving
+Passport
+Laptop ID	Ecs/6194/0003
+NID Father 6129409719873
+NID Mother 6112211116351
+Nid Spouse
+Voter No Father
+Voter No Mother
+Voter No Spouse
+Phone
+Mobile	01330575882
+Email
+Religion	Islam
+Religion Other
+Death Date Of Father
+Death Date Of
+Mother
+Death Date Of
+Spouse
+No Finger	0
+No Finger Print 0
+Voter Area দরিরামপুর (৯নং ওয়ার্ড অংশ) (610854)
+Voter At	present

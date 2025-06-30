@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>রেজিস্ট্রেশন বন্ধ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      width: 90%;
+      max-width: 420px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      animation: floatUp 3s ease-out infinite alternate;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+
+    .glass-card h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #ffdddd;
+    }
+
+    .glass-card p {
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .whatsapp-main-btn {
+      display: inline-block;
+      padding: 14px 24px;
+      background: #25d366;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-main-btn:hover {
+      background: #1ebe5d;
+    }
+
+    /* Floating WhatsApp Button */
+    #whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    /* WhatsApp Form */
+    #whatsapp-form {
+      position: fixed;
+      bottom: 100px;
+      right: 25px;
+      width: 300px;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: none;
+      z-index: 1000;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    #whatsapp-form input,
+    #whatsapp-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    #whatsapp-form button {
+      background-color: #25d366;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    #whatsapp-form button:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Message Card -->
+  <div class="glass-card">
+    <h1>সাইটে নতুন ইউজার রেজিস্ট্রেশন বন্ধ</h1>
+    <p>একাউন্ট খুলতে সরাসরি WhatsApp-এ যোগাযোগ করুন।</p>
+    <a class="whatsapp-main-btn" href="https://wa.me/8801935350668" target="_blank">WhatsApp এ মেসেজ দিন</a>
+  </div>
+
+  <!-- Floating WhatsApp Icon -->
+  <div id="whatsapp-float" onclick="toggleForm()">💬</div>
+
+  <!-- WhatsApp Input Form -->
+  <div id="whatsapp-form">
+    <input type="text" id="name" placeholder="আপনার নাম" required />
+    <input type="email" id="email" placeholder="ইমেইল" required />
+    <input type="text" id="number" placeholder="WhatsApp নাম্বার" required />
+    <select id="premium">
+      <option value="না">প্রিপেইড মেম্বার</option>
+	  <option value="হ্যাঁ">প্রিমিয়াম/পেইড মেম্বার</option>
+    </select>
+    <button onclick="sendWhatsApp()">WhatsApp এ পাঠান</button>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function toggleForm() {
+      const form = document.getElementById("whatsapp-form");
+      form.style.display = form.style.display === "block" ? "none" : "block";
+    }
+
+    function sendWhatsApp() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const number = document.getElementById("number").value.trim();
+      const premium = document.getElementById("premium").value;
+
+      if (!name || !email || !number) {
+        alert("সব তথ্য পূরণ করুন!");
+        return;
+      }
+
+      const message = `নাম: ${name}%0Aইমেইল: ${email}%0AWhatsApp নাম্বার: ${number}%0Aপেইড মেম্বার: ${premium}`;
+      const whatsappURL = `https://wa.me/8801935350668?text=${message}`;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+</body>
+</html>

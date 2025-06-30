@@ -1,1 +1,10 @@
-# appi
+# CODED WITH LOVE BY IGNOREDHAXOR
+## SILENCE IS GOLDEN
+### COPYCAT
+
+tx1337Admin
+tx1337
+
+
+admin
+admin
